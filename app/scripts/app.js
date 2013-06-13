@@ -1,9 +1,9 @@
 'use strict';
 
-angular.module('expressFrancescoFiengaApp', [])
+angular.module('curriculumApp', [])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
+      .when('/:lang', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })

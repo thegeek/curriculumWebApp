@@ -1,0 +1,13 @@
+<div class="slide" ng-repeat="slide in workinfo.skills.slides" >
+    <h2>{{ slide.title }}</h2>
+    <ul>
+        <li ng-class="{slide:!$first}" ng-repeat="point in slide.points" repeat-done="layoutDone()">
+            <span ng-bind-html-unsafe="point.title"></span>
+            <ul ng-hide="!point.points">
+                <li ng-repeat="subp in point.points">
+                    <span ng-bind-html-unsafe="subp.title"></span>
+                </li>
+            </ul>
+        </li>
+    </ul> 
+</div>

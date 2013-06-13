@@ -1,0 +1,20 @@
+<header ng-controller='HeaderCtrl'>
+    <div class="coloredBar"></div>
+    <section class="mainInfo">
+        <div class="picture offset1 span1">
+            <img ng-src="{{user.img.url}}" alt="{{user.img.placeholder}}"></div>
+        <div class="userName span9">
+            <div class="name">{{user.name}}</div>
+            <div class="jobTitle">{{user.jobTitle}}</div>
+        </div>
+        <div class="contactInfo">
+            <span>e: <a href="mailTo:{{user.email}}">{{user.email}}</a> </span>
+        </div>
+        <div class="btn-toolbar langBar">
+          <div class="btn-group">
+            <a class="btn" ng-class="isItLocale" href="#/it">IT</a>
+            <a class="btn" ng-class="isEnLocale" href="#">EN</a>
+          </div>
+        </div>
+    </section>
+</header>
