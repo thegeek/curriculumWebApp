@@ -71,11 +71,11 @@ app.configure('development',function(){
 });
 
 app.configure('production',function(){
-  app.set('views', __dirname + '/app');
+  app.set('views', __dirname + '/dist');
   //app.set('view engine', 'jade');
   app.use(express.bodyParser());
   app.use(express.methodOverride());
-  app.use(express.static(__dirname + '/app'));
+  app.use(express.static(__dirname + '/dist'));
   app.use(app.router);
   app.engine('html', require('ejs').renderFile);
 });
