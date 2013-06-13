@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('curriculumApp')
-  .controller('HeaderCtrl', function ($scope,$routeParams) {
+  .controller('HeaderCtrl', ['$scope','$routeParams',function ($scope,$routeParams) {
     $scope.user = {
         name:'Francesco Fienga',
         jobTitle:'WebDeveloper',
@@ -11,4 +11,4 @@ angular.module('curriculumApp')
         },
         email:'f.fienga@gmail.com'
     }
-  });
+  }]);

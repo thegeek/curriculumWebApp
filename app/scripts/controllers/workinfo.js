@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('curriculumApp')
-  .controller('WorkinfoCtrl', function ($scope, $routeParams) {
+  .controller('WorkinfoCtrl', [ '$scope','$routeParams', function ($scope, $routeParams) {
   var workinfo = {
     en: {
       personalProfile: {
@@ -266,8 +266,7 @@ angular.module('curriculumApp')
     $scope.workinfo = workinfo.it;
   }
 
-  console.log($routeParams);
-}).directive('slider', [function () {
+}]).directive('slider', [function () {
   return {
     priority: 0,
     template: '<div class="deck-container"></div>',

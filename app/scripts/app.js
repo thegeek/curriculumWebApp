@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('curriculumApp', [])
+angular.module('curriculumApp', ['$routeProvider'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/:lang', {
