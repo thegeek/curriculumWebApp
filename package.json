@@ -4,7 +4,7 @@
     "name": "Francesco Fienga",
     "email": "f.fienga@gmail.com"
   },
-  "version": "0.1.0-1",
+  "version": "0.1.0-2",
   "dependencies": {
     "express": "~3.0.0",
     "ejs": "~0.8.4"
