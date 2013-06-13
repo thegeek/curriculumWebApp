@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('curriculumApp', ['$routeProvider'])
-  .config(function ($routeProvider) {
+angular.module('curriculumApp', [])
+  .config(['$routeProvider',function ($routeProvider) {
     $routeProvider
       .when('/:lang', {
         templateUrl: 'views/main.html',
@@ -10,4 +10,4 @@ angular.module('curriculumApp', ['$routeProvider'])
       .otherwise({
         redirectTo: '/'
       });
-  });
+  }]);
