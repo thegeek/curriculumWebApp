@@ -7,7 +7,7 @@ angular.module('curriculumApp')
           name:'Francesco Fienga',
           jobTitle:'WebDeveloper',
           img: {
-              url:'images/avatar.png',
+              url:'img/avatar.png',
               placeHolder:'Personal Photo'
             },
             email:'f.fienga@gmail.com'
