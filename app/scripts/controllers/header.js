@@ -13,4 +13,18 @@ angular.module('curriculumApp')
             email:'f.fienga@gmail.com'
           };
     }
-]);
+])
+  .animation('header-animation-enter',function(){
+    return {
+      setup: function(element) {
+        element.css({ opacity:0});
+        var memo = 'test me';
+        return memo;
+      },
+      start: function(element,done,memo){
+        element.animate({
+          opacity:1
+        },function() { done(); });
+      }
+    }
+  });
