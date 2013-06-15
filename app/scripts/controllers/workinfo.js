@@ -76,7 +76,7 @@ angular.module('curriculumApp')
             it: {
               personalProfile: {
                 title: 'Profilo Personale',
-                info: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.'
+                info: 'ho lavorato su parecchi progetti sia in ambiente universitario, che lavorativo sono collaborativo sia in ambienti aziendali sia sul web dove collaboro saltuariamente a progetti inerenti la programmazione web in generale e nello specifico sulla programmazione javascript, html, css e php molti dei progetti che ho seguito nel mio lavoro mi hanno portato a interagire sia con i clienti sia con altri professionisti del settore riuscendo a soddisfare tutti i requisiti richiesti nei tempi richiesti tendo ad essere propositivo e pragmatico nel problem solving suggerendo ed adottando le più nuove tecnologie ove necessario, rimanendo aperto al dialogo e alle direttive del team leader'
               },
               workExperience: {
                 title: 'Esperienze Lavorative',
@@ -85,13 +85,8 @@ angular.module('curriculumApp')
                   {
                       company: 'WideSolution s.a.s',
                       job: 'Web Specialist',
-                      date: ' Da Settembre 2012 ad Oggi',
-                      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.'
-                    }, {
-                      company: 'WideSolution s.a.s',
-                      job: 'Web Specialist',
                       date: ' Da Settembre 2011 ad Oggi',
-                      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.'
+                      description: 'Mi Occupo della realizzazione di Front-end grafici basati sulle tecnologie HTML5, Javascript e PHP. Sviluppo plug-in Jquery e Wordpress ad Hoc per ogni necessità che il corrente progetto richiede. Configuro e Manutenziono I server aziendali e quelli dei clienti, principalmente su macchine Linux con configurazione Apache Mysql.'
                     }
                   ]
                 },
@@ -224,7 +219,8 @@ angular.module('curriculumApp')
                         }
                       ]
                     }
-                  ]
+                  ],
+                  notes: 'Utilizza le freccie per Navigare'
                 },
                 education: {
                   title: 'Educazione',
@@ -232,28 +228,16 @@ angular.module('curriculumApp')
                     {
                       college: 'Università degli Studi di Salerno',
                       course: 'Informatica',
-                      description: 'Descrizione',
+                      description: 'Da Settembre 2008 a Dicembre 2011',
                       graduated: {
                         thesis: 'Progettazione e Svilupo di Applicazioni Web',
-                        valutation: '104/110',
-                        info: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.'
+                        valutation: '104/110'
                       }
                     }, {
-                      college: 'Università degli Studi di Salerno',
-                      course: 'Informatica',
-                      description: '',
-                      graduated: {
-                        thesis: 'Progettazione e Svilupo di Applicazioni Web',
-                        valutation: '104/110',
-                        info: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.'
-                      }
-                    }, {
-                      college: 'Università degli Studi di Salerno',
-                      course: 'Informatica',
-                      description: 'Descrizione'
-
+                      college: 'Università degli Studi di Siena',
+                      course: 'Ingegneria Informatica',
+                      description: 'Programmazione C, Robotica, Elettronica, Telecomunicazioni',
                     }
-
                   ]
                 },
                 portfolio: {
@@ -267,13 +251,23 @@ angular.module('curriculumApp')
                     }, {
                       client: 'You Laurea ',
                       website: 'http://flip.youlaurea.it',
-                      isUrl: false,
+                      isUrl: true,
                       description: 'Sviluppo Fonrt-end e Back-End'
                     }, {
                       client: 'Cipolla Ramata di Montoro',
-                      website: 'http://flip.youlaurea.it',
+                      website: 'http:// www.cipollaramatadimontoro.com',
                       isUrl: true,
                       description: 'Front-end/BackEnd Development'
+                    }, {
+                      client: 'Facebook App per Emu Roma',
+                      website: 'https://apps.facebook.com/designyourxmas/',
+                      isUrl: true,
+                      description: 'Facebook App Development, Mailing Services e Custom Statistics Usage Report'
+                    }, {
+                      client: 'Sviluppo Plug-in Wordpress',
+                      website: 'http://www.blogcida.it - http://www.oratoriocavadeitirreni.org',
+                      isUrl: false,
+                      description: 'Sviluppo Plug-in Ad Hoc per vari clienti'
                     }
                   ]
                 },
@@ -327,6 +321,7 @@ angular.module('curriculumApp')
             currentSlideDom.append(firstLevelUl);
             iElement.append(currentSlideDom);
           });
+
         },
         post: function() {
             jQuery.deck('.slide',{

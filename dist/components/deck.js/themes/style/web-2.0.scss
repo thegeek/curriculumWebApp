@@ -12,11 +12,11 @@
 	transform:rotate($deg);
 }
 
-// @mixin box-shadow($x, $y, $blur, $color) {
-// 	-webkit-box-shadow:$x $y $blur $color;
-// 	-moz-box-shadow:$x $y $blur $color;
-// 	box-shadow:$x $y $blur $color;
-// }
+@mixin box-shadow($x, $y, $blur, $color) {
+	-webkit-box-shadow:$x $y $blur $color;
+	-moz-box-shadow:$x $y $blur $color;
+	box-shadow:$x $y $blur $color;
+}
 
 
 .deck-container {
