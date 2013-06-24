@@ -1,0 +1,112 @@
+<header ng-controller="HeaderCtrl">
+    <div class="coloredBar"></div>
+    <section class="mainInfo">
+        <div class="picture offset1 span1">
+            <img ng-src="{{user.img.url}}" alt="{{user.img.placeholder}}"></div>
+        <div class="userName offset1 span7">
+            <div class="name">{{user.name}}</div>
+            <div class="jobTitle">{{user.jobTitle}}</div>
+        </div>
+        <div class="contactInfo">
+            <span>e: <a href="mailTo:{{user.email}}">{{user.email}}</a> </span>
+        </div>
+        <div class="btn-toolbar langBar">
+          <div class="btn-group">
+            <a class="btn" ng-class="isItLocale" href="#">IT</a>
+            <a class="btn" ng-class="isEnLocale" href="#/en">EN</a>
+          </div>
+        </div>
+    </section>
+</header>
+<div class="workInfo" ng-controller="WorkinfoCtrl">
+    <section class="personalProfile span10 offset1">
+        <div class="sectionTitle">
+            {{workinfo.personalProfile.title}}
+        </div>
+        <div class="sectionInfo offset1">
+            <p ng-bind-html-unsafe="workinfo.personalProfile.info"></p>
+        </div>
+    </section>
+    <section class="workExperience span10 offset1">
+        <div class="sectionTitle">
+            {{workinfo.workExperience.title}}
+        </div>
+        <div class="sectionInfo list offset1">
+            <ul>
+                <li ng-repeat="work in workinfo.workExperience.works">
+                    <span class="company">{{ work.company }}</span>
+                    <span class="job">{{work.job}}</span>
+                    <span class="date">{{ work.date }}</span>
+                    <p class="description" ng-bind-html-unsafe="work.description">
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="skills span10 offset1">
+        <div class="sectionTitle">
+            {{workinfo.skills.title}}
+        </div>
+        <section class="sectionInfo offset1">
+            <!-- directive: slider workinfo.skills.slides -->
+            <p class="note small">{{ workinfo.skills.notes }}</p>
+        </section>
+    </section>
+    <section class="education span10 offset1">
+        <div class="sectionTitle">
+            {{workinfo.education.title}}
+        </div>
+        <div class="sectionInfo list offset1">
+            <ul>
+                <li ng-repeat="edTitle in workinfo.education.educationTitles">
+                    <span class="college">{{edTitle.college}}</span>
+                    <span class="course">{{edTitle.course}}</span>
+                    <p>{{edTitle.description}}</p>
+                    <span class="graduated" ng-show="edTitle.graduated">
+                        <span class="thesis">
+                            <span class="bold">Tesi:</span>
+                            {{edTitle.graduated.thesis}}
+                        </span>
+                        <span class="valutation">
+                            <span class="bold">Voto:</span>
+                            {{edTitle.graduated.valutation}}
+                        </span>
+                        <span class="info">
+                            {{edTitle.graduated.info}}
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="portfolio span10 offset1">
+        <div class="sectionTitle">
+            {{workinfo.portfolio.title}}
+        </div>
+        <div class="sectionInfo list offset1">
+            <ul>
+                <li ng-repeat="work in workinfo.portfolio.works">
+                    <span class="client">{{ work.client }}</span>
+                    <span class="website" ng-switch="" on="work.isUrl">w:
+                            <a ng-switch-when="true" ng-href="{{work.website}}">{{work.website}}</a>
+                            <span ng-switch-default="">{{work.website}}</span>
+                    </span>
+
+                    <p class="description">
+                        {{work.description}}
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+<!-- <div class="hero-unit">
+  <h1>'Allo, 'Allo!</h1>
+  <p>You now have</p>
+  <ul>
+      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
+  </ul>
+  <p>installed</p>
+  <h3>Enjoy coding! - Yeoman</h3>
+</div> -->
