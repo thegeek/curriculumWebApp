@@ -168,21 +168,31 @@ angular.module('curriculumApp')
           portfolio: {
               title: 'Portfolio',
               works: [{
-                  client: 'La Regina di San Marzano',
-                  website: 'http://www.lareginadisanmarzano.com',
-                  isUrl: true,
-                  description: 'Front-end/Back-End Development'
-                }, {
-                  client: 'You Laurea ',
-                  website: 'http://flip.youlaurea.it',
-                  isUrl: false,
-                  description: 'Front-end/BackEnd Development'
-                }, {
-                  client: 'Cipolla Ramata di Montoro',
-                  website: 'http://flip.youlaurea.it',
-                  isUrl: true,
-                  description: 'Front-end/BackEnd Development'
-                }
+                      client: 'La Regina di San Marzano',
+                      website: 'http://www.lareginadisanmarzano.com',
+                      isUrl: true,
+                      description: 'Front-end/Back-end Development with Lavarel and AMDJS'
+                    }, {
+                      client: 'You Laurea ',
+                      website: 'http://flip.youlaurea.it',
+                      isUrl: true,
+                      description: 'Front-end development with jQuery, as project Required'
+                    }, {
+                      client: 'Cipolla Ramata di Montoro',
+                      website: 'http:// www.cipollaramatadimontoro.com',
+                      isUrl: true,
+                      description: 'Front-end/BackEnd Development'
+                    }, {
+                      client: 'Facebook App per Emu Roma',
+                      website: 'https://apps.facebook.com/designyourxmas/',
+                      isUrl: true,
+                      description: 'Facebook App Development, Mailing Services e Custom Statistics Usage Report'
+                    }, {
+                      client: 'Sviluppo Plug-in Wordpress',
+                      website: 'http://www.blogcida.it - http://www.oratoriocavadeitirreni.org',
+                      isUrl: false,
+                      description: 'Wordpress configuration/maintainance and plug-in development'
+                    }
         ]
               },
             },
