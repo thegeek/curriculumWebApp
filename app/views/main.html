@@ -12,8 +12,8 @@
         </div>
         <div class="btn-toolbar langBar">
           <div class="btn-group">
-            <a class="btn" ng-class="isItLocale" href="#/it">IT</a>
-            <a class="btn" ng-class="isEnLocale" href="#">EN</a>
+            <a class="btn" ng-class="isItLocale" href="#">IT</a>
+            <a class="btn" ng-class="isEnLocale" href="#/en">EN</a>
           </div>
         </div>
     </section>
@@ -24,7 +24,7 @@
             {{workinfo.personalProfile.title}}
         </div>
         <div class="sectionInfo offset1">
-            <p>{{workinfo.personalProfile.info}}</p>
+            <p ng-bind-html-unsafe="workinfo.personalProfile.info"></p>
         </div>
     </section>
     <section class='workExperience span10 offset1'>
@@ -37,8 +37,7 @@
                     <span class="company">{{ work.company }}</span>
                     <span class="job">{{work.job}}</span>
                     <span class="date">{{ work.date }}</span>
-                    <p class="description">
-                        {{work.description}}
+                    <p class="description" ng-bind-html-unsafe="work.description">
                     </p>
                 </li>
             </ul>

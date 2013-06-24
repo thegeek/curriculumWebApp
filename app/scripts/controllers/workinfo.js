@@ -6,7 +6,7 @@ angular.module('curriculumApp')
     en: {
         personalProfile: {
           title: 'Personal Profile',
-          info: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.'
+          info: "<p>Hi, my name is Francesco Fienga, i'm 30 years old and i'm a Web Specialist. My passion for computer technologies goes back to when i was 8 years old, when i turned on my first pc, if you want to call it so, an 8086 with 60mb hd and 256k memory with a green dotted matrix screen.</p><p>Since then i've improved my knowledge day by day, first focusing on OS, (Redhat 6, then Gentoo and Ubuntu to end on OSX machine), then on Web Security (penetration testing, programs code cracking), to end to Web develompment.</p> <p>As Gratuated in IT Degree, i know from the basic to the advanced programming tecniques, a large range of programming languages as, c,java,python,js,bash,cocoa and ways to mix them together to solve problems.</p> <p>During my studies, i've worked as selfemploye to solve informatic trouble to my acquaintance,  like networking setup for small firm, or building mail protocol system.</p> <p>Most important things i've learned in this 22 year in IT world is that every piece of knowledge, can be use in circumstances that aren't think for. Nowadays this approch is a part of what is  called 'Lateral Thinghing', and i try to use it as much as i can.</p> <p>I'm married, and i like to go in countries where my job is valutated much more than in italy. Much of the customer here thinks that a website is matter of 1 hour and 100€ but they want them with high quality and highly interactive. Who does my job know what i mean.</p> <p>Don't get me wrong i like to work with my Boss, but my dream is to have a family in a better place. I just hope it's my country but i know that's a long shot.</p> <p>Keep Reading i hope you like.</p>"
         },
         workExperience: {
           title: 'Work Experience',
@@ -15,39 +15,152 @@ angular.module('curriculumApp')
             {
               company: 'WideSolution s.a.s',
               job: 'Web Specialist',
-              date: ' From Settembre 2012 until Today',
-              description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.'
-            }, {
-              company: 'WideSolution s.a.s',
-              job: 'Web Specialist',
-              date: 'From Settembre 2011 until Today',
-              description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.'
+              date: ' From Settembre 2011 until Today',
+              description: "<p>My main role in Wide Solution, is Web Specialist. I realize all front-end project, using most advanced coding flow technique like bower, composer, yeoman.</p><p>For some complex Project i realize backend too, generally based on Laravel, but i have CodeIgniter knowledge too. </p><p>I use and programm jQuery plugins and backbone app a lot, and sometimes jquery-ui too, but nowadays i'm learning angularjs to get to the next level.</p>"
             }
           ]
         },
         skills: {
-            title: 'Skills'
-          },
+                  title: 'Skills',
+                  slides: [
+                    {
+                      title: 'Web / Client Side',
+                      points: [
+                        {
+                          title: 'Html5,Css3 e Javascript Programming <br/> OOJS, ADM e Pure'
+                        }, {
+                          title: 'Web Development Framework Used',
+                          points: [
+                            {
+                              title: 'Yeoman, Html5 Poilerplate'
+                            }
+                          ]
+                        }, {
+                          title: 'Framework/Library JS Used',
+                          points: [
+                            {
+                              title: 'jQuery, Jquery UI,Jquery Mobile'
+                            }, {
+                              title: 'Underscore, BackBone,RequireJs'
+                            }, {
+                              title: 'Modernizer'
+                            }
+                          ]
+                        }
+                      ]
+                    }, {
+                      title: 'Web / Client Side',
+                      points: [
+                        {
+                          title: 'Framework/Library CSS Used',
+                          points: [
+                            {
+                              title: 'Twitter Bootstrap<br /> Sass e Css Version'
+                            }, {
+                              title: 'Normalizer'
+                            }, {
+                              title: 'Compass / Sass'
+                            }
+                          ]
+                        }
+                      ]
+                    }, {
+                      title: 'Web / Server Side',
+                      points: [
+                        {
+                          title: 'Application/Programming Languages Used',
+                          points: [
+                            {
+                              title: 'PHP, OOPHP, NodeJs,Apache'
+                            }
+                          ]
+                        }, {
+                          title: 'PHP Framework Used',
+                          points: [
+                            {
+                              title: 'CodeIgniter, Laraver V3 e V4'
+                            }
+                          ]
+                        }, {
+                          title: 'CMS Used',
+                          points: [
+                            {
+                              title: 'Wordpress, Wordpress Plug-In Development'
+                            }
+                          ]
+                        },
+
+                      ]
+                    }, {
+                      title: 'Web / Server Side',
+                      points: [
+                        {
+                          title: 'NodeJs Framework Used',
+                          points: [
+                            {
+                              title: 'ExpressJs'
+                            }
+                          ]
+                        }, {
+                          title: 'Db Application Used',
+                          points: [
+                            {
+                              title: 'MySql, Redis, MongoDb'
+                            }
+                          ]
+                        }
+                      ]
+                    }, {
+                      title: 'Operative Systems',
+                      points: [
+                        {
+                          title: 'Linux Sever Configuration and Maintainance',
+                        }, {
+                          title: 'Apache/Mysql Installation Configuration and Maintainance',
+                        }, {
+                          title: 'Server Redis Configuration',
+                        }, {
+                          title: 'Server MongoDb Configuration',
+                        }, {
+                          title: 'Configuration of Development Project git based',
+                        }, {
+                          title: 'Wan/Lan/Wifi Configuration and Maintainance',
+                        },
+                      ]
+                    }, {
+                      title: 'Operative Systems',
+                      points: [
+                        {
+                          title: 'Linux/Mac OS/Windows PC Installation Configuration and Maintainance',
+                        }, {
+                          title: 'iWork and Office suite knowledge',
+                        },
+                        {
+                          title: 'Adobe Suite knowledge focused on web Development',
+                        }
+                      ]
+                    }, {
+                      title: 'Other Programming Languages',
+                      points: [
+                        {
+                          title: 'C,Objective-C,Java,Python,Bash Script',
+                        }, {
+                          title: 'iOs e Mac Os X Based app development',
+                        }
+                      ]
+                    }
+                  ],
+                  notes: 'Use Arrows to navigate'
+                },
           education: {
             title: 'Educazione',
             educationTitles: [
               {
                 college: 'Università degli Studi di Salerno',
-                course: 'Informatica',
-                description: 'Description',
+                course: 'Informatic Technologies',
                 graduated: {
-                  thesis: 'Progettazione e Svilupo di Applicazioni Web',
+                  thesis: 'iOs Application Development',
                   valutation: '104/110',
-                  info: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.'
-                }
-              }, {
-                college: 'Università degli Studi di Salerno',
-                course: 'Informatica',
-                description: '',
-                graduated: {
-                  thesis: 'Progettazione e Svilupo di Applicazioni Web',
-                  valutation: '104/110',
-                  info: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.'
                 }
               }
             ]
