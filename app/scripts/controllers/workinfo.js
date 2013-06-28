@@ -32,7 +32,7 @@ angular.module('curriculumApp')
                           title: 'Web Development Framework Used',
                           points: [
                             {
-                              title: 'Yeoman, Html5 Poilerplate'
+                              title: 'Yeoman, Html5 Boilerplate'
                             }
                           ]
                         }, {
@@ -404,7 +404,8 @@ angular.module('curriculumApp')
     $scope.workinfo = workinfo.it;
   }
 
-}]).directive('slider', [function () {
+}])
+.directive('slider', [function () {
   return {
     priority: 0,
     template: '<div class="deck-container"></div>',
