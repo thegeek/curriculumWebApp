@@ -7,8 +7,10 @@ basePath = '';
 files = [
   JASMINE,
   JASMINE_ADAPTER,
+  'app/components/jquery/jquery.js',
   'app/components/angular/angular.js',
   'app/components/angular-mocks/angular-mocks.js',
+  'app/components/deck.js/core/deck.core.js',
   'app/scripts/*.js',
   'app/scripts/**/*.js',
   'test/mock/**/*.js',
@@ -46,7 +48,8 @@ autoWatch = false;
 // - Safari (only Mac)
 // - PhantomJS
 // - IE (only Windows)
-browsers = ['Chrome','Firefox','Safari','PhantomJS'];
+// browsers = ['Chrome','Firefox','Safari','PhantomJS'];
+browsers = ['PhantomJS'];
 
 // If browser does not capture in given timeout [ms], kill it
 captureTimeout = 5000;

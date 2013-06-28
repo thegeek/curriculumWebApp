@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('curriculumApp')
-  .controller('MainCtrl', ['$scope','$routeParams','$locale',function ($scope,$routeParams,$locale) {
+  .controller('MainCtrl', ['$scope','$routeParams','$locale', function ($scope,$routeParams,$locale) {
     if($routeParams.lang.toLowerCase() === 'it') {
       $locale.id = 'it-IT';
       $scope.lang = 'it';

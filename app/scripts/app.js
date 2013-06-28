@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('curriculumApp', [])
-  .config(['$routeProvider',function ($routeProvider) {
+angular.module('curriculumApp',['curriculumApp.services','curriculumApp.directives']).
+  config(['$routeProvider',function ($routeProvider) {
     $routeProvider
       .when('/:lang', {
         templateUrl: 'views/main.html',
